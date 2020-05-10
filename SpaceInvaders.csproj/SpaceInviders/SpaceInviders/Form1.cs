@@ -37,6 +37,11 @@ namespace SpaceInviders
             
         }
 
+        /// <summary>
+        /// Функция, отвечающая за тик таймера, связанного с управлением монстров, а также за их перерисовку
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void tick1_Tick(object sender, EventArgs e)
         {
             if (!Creatures.GameOver)
@@ -51,6 +56,11 @@ namespace SpaceInviders
             }
         }
 
+        /// <summary>
+        /// Функция, отвечающая за создание действий игрока при нажатии клавиши
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (!Creatures.GameOver)
@@ -71,6 +81,11 @@ namespace SpaceInviders
                 Application.Exit();
         }
 
+        /// <summary>
+        /// Функция, отвечающая за тик таймера, связанного с управлением игрока и патронов, а также за их перерисовку
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (!Creatures.GameOver)
@@ -101,6 +116,9 @@ namespace SpaceInviders
                 GameOver();
         }
 
+        /// <summary>
+        /// Функция, которая обновляет счетчик, отвечающего за показ очков
+        /// </summary>
         private void UpdateScore()
         {
             if (!Creatures.GameOver)
@@ -112,12 +130,18 @@ namespace SpaceInviders
             }
         }
 
+        /// <summary>
+        /// Функция, которая показывает сообщение о проигрыше
+        /// </summary>
         private void GameOver()
         {
             label1.Show();
             label2.Show();
         }
 
+        /// <summary>
+        /// Функция, которая обновляет состояние игрового поля и экрана
+        /// </summary>
         private void NewGame()
         {
             Creatures = new Creatures();
@@ -125,6 +149,11 @@ namespace SpaceInviders
             label2.Hide();
         }
 
+        /// <summary>
+        /// Функция, отвечающая за прекращение действий игрока при отжатии клавиши
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if ((e.KeyValue == (char)Keys.A || e.KeyValue == (char)Keys.Left
@@ -132,7 +161,11 @@ namespace SpaceInviders
                 Creatures.Player.Direction = 0;
         }
 
-
+        /// <summary>
+        /// Функция, отвечающая за отрисовку игрового поля
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             if (!Creatures.GameOver)

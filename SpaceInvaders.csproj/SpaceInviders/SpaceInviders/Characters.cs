@@ -24,6 +24,11 @@ namespace SpaceInviders
             Width = Resource1.monster.Width + 1;
         }
 
+        /// <summary>
+        /// Функция, которая проверяет, стоит ли стрелять монстру. Если стоит, создает патрон.
+        /// </summary>
+        /// <param name="creatures">Общее состояние игры (Model) - в паттерне MVC</param>
+        /// <param name="rnd">Генератор псевдослучайных чисел</param>
         public void MakeShot(Creatures creatures, Random rnd)
         {
             if (rnd.Next(1, 101) < 16 && PlayerOnRange(creatures.Player))
@@ -33,6 +38,11 @@ namespace SpaceInviders
             }
         }
 
+        /// <summary>
+        /// Функция, которая определяет, находится ли игрок в диапазоне обстрела этого монстра
+        /// </summary>
+        /// <param name="player">Игрок</param>
+        /// <returns>Булево значение, находится ли игрок в диапазоне обстрела</returns>
         private bool PlayerOnRange(Player player)
         {
             return Math.Abs(player.X + player.Width / 2 - X) <= GameSetting.RangeOnFire;
@@ -57,6 +67,9 @@ namespace SpaceInviders
             Width = Resource1.player.Width;
         }
 
+        /// <summary>
+        /// Функция, которая изменяет координаты игрока (сдвигает его на определенные координаты)
+        /// </summary>
         public void MovePlayer()
         {
             if ((Direction > 0 && X + 2 * Height < GameSetting.Width) ||
@@ -92,6 +105,10 @@ namespace SpaceInviders
             Width = Resource1.patron.Width;
         }
 
+        /// <summary>
+        /// Функция, которая занимается сдвигом патрона, выпущенного Игроком, и уничтожением патрона и объекта, при их столкновении
+        /// </summary>
+        /// <param name="creatures">Общее состояние игры (Model) - в паттерне MVC</param>
         public void MovePlayerCatridge(Creatures creatures)
         {
             var isBreak = false;
@@ -114,6 +131,10 @@ namespace SpaceInviders
                 Y -= GameSetting.MoveCatridge;
         }
 
+        /// <summary>
+        /// Функция, которая занимается сдвигом патрона, выпущенного Монстра, и уничтожением патрона и объекта, при их столкновении
+        /// </summary>
+        /// <param name="creatures">Общее состояние игры (Model) - в паттерне MVC</param>
         public void MoveMonsterCatridge(Creatures creatures)
         {
             foreach (var b in creatures.Bunkers)
@@ -153,6 +174,10 @@ namespace SpaceInviders
             Bunkers = temp.MakeBunkers();
         }
 
+        /// <summary>
+        /// Функция, которая двигает монстров (двигает либо по оси X, либо по Y)
+        /// </summary>
+        /// <param name="creatures">Общее состояние игры (Model) - в паттерне MVC</param>
         public void MoveMosters(Creatures creatures)
         {
             foreach (var m in Monsters)
@@ -183,6 +208,9 @@ namespace SpaceInviders
             }
         }
 
+        /// <summary>
+        /// Функция, которая создает всех монстров на своим первоначальных местах
+        /// </summary>
         public void ResetMonsters()
         {
             var temp = new List<Monster>();
@@ -207,6 +235,10 @@ namespace SpaceInviders
             Height = Resource1.bunker.Height;
         }
 
+        /// <summary>
+        /// Функция, которая создает на игровом поле 2 бункера
+        /// </summary>
+        /// <returns>Лист, состоящий из двух бункеров</returns>
         public List<Bunker> MakeBunkers()
         {
             var temp = new List<Bunker>();
