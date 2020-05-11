@@ -43,7 +43,7 @@ namespace SpaceInviders
         /// </summary>
         /// <param name="player">Игрок</param>
         /// <returns>Булево значение, находится ли игрок в диапазоне обстрела</returns>
-        private bool PlayerOnRange(Player player)
+        public bool PlayerOnRange(Player player)
         {
             return Math.Abs(player.X + player.Width / 2 - X) <= GameSetting.RangeOnFire;
         }
