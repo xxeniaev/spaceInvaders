@@ -1,6 +1,7 @@
 # Space Invaders v.0002
 Игра "Space Invaders"
 Вся документация находится в: spaceInvaders/SpaceInvaders.csproj/SpaceInviders/SpaceInviders/documentation/documentation.html
+
 Тесты в: spaceInvaders/SpaceInvaders.csproj/SpaceInviders/SpaceInviders.Tests
 
 После запуска .exe игра начнется автоматически. Цель игры - набрать максимальное колчество очков, убивая приближающихся к тебе монстров
