@@ -8,3 +8,13 @@ C:\Users\Данил\Desktop\SpaceInviders.csproj\SpaceInviders\SpaceInviders\obj
 C:\Users\Данил\Desktop\SpaceInviders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.exe
 C:\Users\Данил\Desktop\SpaceInviders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.pdb
 C:\Users\Данил\Desktop\SpaceInviders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.Resource1.resources
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\bin\Debug\SpaceInviders.exe.config
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\bin\Debug\SpaceInviders.exe
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\bin\Debug\SpaceInviders.pdb
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.csprojAssemblyReference.cache
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.Form1.resources
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.Properties.Resources.resources
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.Resource1.resources
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.csproj.GenerateResource.cache
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.exe
+C:\Users\Данил\Desktop\project\SpaceInvaders.csproj\SpaceInviders\SpaceInviders\obj\Debug\SpaceInviders.pdb

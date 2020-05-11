@@ -72,7 +72,7 @@ namespace SpaceInviders
         /// </summary>
         public void MovePlayer()
         {
-            if ((Direction > 0 && X + 2 * Height < GameSetting.Width) ||
+            if ((Direction > 0 && X + 2 * GameSetting.MovePlayer < GameSetting.Width) ||
                 (Direction < 0 && X - GameSetting.MovePlayer >= 0))
                 X += Direction * GameSetting.MovePlayer;
         }
